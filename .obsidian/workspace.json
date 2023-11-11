@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "9101d6e967a6312c",
+    "type": "split",
+    "children": [
+      {
+        "id": "314694251076fc30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ff967a762865ba7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "多模态/基础算法模型/扩散模型/DSM分数扩散模型.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94870f075f849de4",
+    "type": "split",
+    "children": [
+      {
+        "id": "d27c34f89ffc62b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81ef09a06c824526",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "930647ac6f03cb0a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#费舍尔信息矩阵（Fisher",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5b83b2e99e1e7be8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fa4934f3f29184e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "29dcd8c428bc879a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf138d6eea93c831",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "多模态/基础算法模型/扩散模型/DSM分数扩散模型.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "621f81d20578594a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "多模态/基础算法模型/扩散模型/DSM分数扩散模型.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "883c4eed2de054cb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1250bdb4daa254f0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "多模态/基础算法模型/扩散模型/DSM分数扩散模型.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "930647ac6f03cb0a",
+  "lastOpenFiles": [
+    "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
+    "多模态/基础算法模型/扩散模型/DSM分数扩散模型.md",
+    "多模态/基础算法模型/扩散模型/StableDiffusionXL模型.md",
+    "多模态/基础算法模型/扩散模型/StableDiffusion模型.md",
+    "多模态/基础算法模型/训练方法/ROLA训练方法.md",
+    "多模态/基础算法模型/训练扩散实验.md",
+    "多模态/基础算法模型/训练方法",
+    "多模态/基础算法模型/未命名文件夹",
+    "多模态/基础算法模型/训练扩散实验 1.md"
+  ]
+}
