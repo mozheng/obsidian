@@ -13,8 +13,8 @@ Denoising Diffusion Probabilistic Models
 ### 2.1 变量声明
 ![](images/ddpm图示.png)
 1. $x_0$ 为原始图像，$x_t$ 为加t步噪声后的图像，噪声加到最后（第T步）为 $x_T$ 
-2. 图像加噪声为 $q(x_t|x_{t-1})$ 操作，意为从$x_{t-1}$ 加噪声成 $x_t$ ；图像降噪为 $p_\theta(x_{t-1}|x_t)$ 操作，意为从$x_t$ 降噪声成 $x_{t-1}$ 
-3. 每一步加噪声（或去噪声）都有参数对 $\alpha_t,\beta_t$，其中有$0<\beta_t<<\alpha_t<1$，并且$\alpha_t+\beta_t=1$
+2. 图像加噪声为 $q(x_t|x_{t-1})$ 操作，意为从 $x_{t-1}$ 加噪声成 $x_t$ ；图像降噪为 $p_\theta(x_{t-1}|x_t)$ 操作，意为从 $x_t$ 降噪声成 $x_{t-1}$ 
+3. 每一步加噪声（或去噪声）都有参数对 $\alpha_t,\beta_t$ ，其中有 $0<\beta_t<<\alpha_t<1$ ，并且 $\alpha_t+\beta_t=1$
 
 ### 2.2 前向过程-混入噪声
 1. 从原图 $x_0$ 开始一点一点加噪声
@@ -59,7 +59,7 @@ def q_sample(self, x_start, t, noise=None):
 反向过程都是基于 $q ( x_{t − 1} ∣ x_t, x_0 )$ 推理的。总体思想是，在知道原始图像 $x_0$ 、噪声 $x_t$ 的两个条件下给噪声 $x_t$ 降噪，得到  $x_{t − 1}$ 的过程。这时，许多人会有两个疑问点。
 
 >**疑问点1：你不就是要一步一步求原始图像 $x_0$ 吗？你这里将原始图像 $x_0$ 当成条件是什么意思？**
-> 对！因为单纯思考 $q ( x_{t − 1} ∣ x_t)$ 没有任何条件是肯定推不出来的，但是$q ( x_{t − 1} ∣ x_0)$ 是可以的 。我这里借 $x_0$ 推理我的条件概率。而且由于上文推理出 $x_t=\sqrt{\bar{\alpha_t}}x_0+\sqrt{1-\bar{\alpha_t}}Z$ 这一公式，可得 $x_0=\frac{1}{\sqrt{\bar{\alpha}_t}}(x_t-\sqrt{1-\bar{\alpha}_t}z_t)$ 。（注意：此时的 $z_t$ 与原始声明变量中的 $Z_t$ 并不一致，他是正态重定义后的标识，但是由于是随机噪声，本质一致，所以才这么记。）又因为 $x_0$ 也可以用 $x_t$ 进行表示，所以在把噪声参数当成常量时 ，$q ( x_{t − 1} ∣ x_t, x_0 )$ 与 $q ( x_{t − 1} ∣ x_t)$ 是相等。
+> 对！因为单纯思考 $q ( x_{t − 1} ∣ x_t)$ 没有任何条件是肯定推不出来的，但是 $q ( x_{t − 1} ∣ x_0)$ 是可以的 。我这里借 $x_0$ 推理我的条件概率。而且由于上文推理出 $x_t=\sqrt{\bar{\alpha_t}}x_0+\sqrt{1-\bar{\alpha_t}}Z$ 这一公式，可得 $x_0=\frac{1}{\sqrt{\bar{\alpha}_t}}(x_t-\sqrt{1-\bar{\alpha}_t}z_t)$ 。（注意：此时的 $z_t$ 与原始声明变量中的 $Z_t$ 并不一致，他是正态重定义后的标识，但是由于是随机噪声，本质一致，所以才这么记。）又因为 $x_0$ 也可以用 $x_t$ 进行表示，所以在把噪声参数当成常量时 ，$q ( x_{t − 1} ∣ x_t, x_0 )$ 与 $q ( x_{t − 1} ∣ x_t)$ 是相等。
 
 > **疑问点1 plus：那也不对啊，前向推理 $z_t$ 是提前生成，是已知的。后向过程怎么知道？**
 > 对！能思考到这一步就说明你很棒，到现在前后向概念还没有混淆！在这里我们会用一个带参数 $\theta$  的噪声 $z_\theta(x_t,t)$ 来表示 $z_t$ 。这种公式的妥协，带给我们一个预感：损失函数与噪声是直接相关的。具体的证明，在优化过程中得以完整描述
@@ -76,7 +76,7 @@ q({x}_{t-1} \vert {x}_t, {x}_0)
 \end{align}
 $$
 此时有小伙伴会喊“停停！第一个等号是贝叶斯公式我知道，第二个等号是怎么回事？”
-其实这里都是高斯分布 $f(x)=\frac{1}{σ \sqrt{2π}} \cdot e^{\frac{-(x - μ)^2} {2σ^2}}$，相乘是指数相加，相除是指数相减。根据上一步的前向公式我们知道 $q(x_t|x_0)=N(x_t;\sqrt{\bar{\alpha}_t}x_0, (1-\bar{\alpha}_t)\mathbf{I})$  与 $x_t = \sqrt{\alpha_t}x_{t-1}+\sqrt{1-\alpha_t}Z_t$ ，因此我们可以推出以下：
+其实这里都是高斯分布 $f(x)=\frac{1}{σ \sqrt{2π}} \cdot e^{\frac{-(x - μ)^2} {2σ^2}}$ ，相乘是指数相加，相除是指数相减。根据上一步的前向公式我们知道 $q(x_t|x_0)=N(x_t;\sqrt{\bar{\alpha}_t}x_0, (1-\bar{\alpha}_t)\mathbf{I})$  与 $x_t = \sqrt{\alpha_t}x_{t-1}+\sqrt{1-\alpha_t}Z_t$ ，因此我们可以推出以下：
 $$
 \begin{align}
 q({x}_{t} \vert {x}_{t-1}, {x}_0)  &= N(x_{t};\sqrt{\alpha_{t}}x_{t-1}, (1-{\alpha}_{t})\mathbf{I}) \\
@@ -84,7 +84,7 @@ q(x_{t-1}|x_0) & = N(x_{t-1};\sqrt{\bar{\alpha}_{t-1}}x_0, (1-\bar{\alpha}_{t-1}
 q(x_t|x_0) & = N(x_t;\sqrt{\bar{\alpha}_t}x_0, (1-\bar{\alpha}_t)\mathbf{I})
 \end{align}
 $$
-前面设定了 $\alpha_t+\beta_t=1$ ，因此这里$q({x}_{t} \vert {x}_{t-1}, {x}_0)= N(x_{t};\sqrt{\alpha_{t}}x_{t-1}, {\beta}_{t}\mathbf{I})$ ，继续推理得到以下的结果：
+前面设定了 $\alpha_t+\beta_t=1$ ，因此这里 $q({x}_{t} \vert {x}_{t-1}, {x}_0)= N(x_{t};\sqrt{\alpha_{t}}x_{t-1}, {\beta}_{t}\mathbf{I})$ ，继续推理得到以下的结果：
 $$
 \begin{align}
 q({x}_{t-1} \vert {x}_t, {x}_0) 
@@ -130,7 +130,7 @@ $$
 $$\small\mathcal{L}_{VLB}=\underbrace{\mathbb{E}_{q(x_0)}\left(\mathbb{E}_{q(x_{1:T}|x_0)}\left[\log\frac{q(x_{1:T}|x_0)}{p_\theta(x_{0:T})}\right]\right)=\mathbb{E}_{q(x_{0:T})}\left[\log\frac{q(x_{1:T}|x_0)}{p_\theta(x_{0:T})}\right]}_{Fubini定理}\geq\mathbb{E}_{q(x_0)}[-\log p_\theta(x_0)]$$
 > **说明**：Fubini提出：在一定可积的条件下，不仅能够用逐次积分计算双重积分，而且交换逐次积分的顺序时，积分结果不变。这个可积的条件在Fubini那里比较苛刻，但我们不用担心，因为这里的期望函数都比较简单。有兴趣的可以找资料详细研究，这里不做陈述。（就是懒）
 
-这里，我们最小化左边的 $\small\mathcal{L}_{VLB}$，即可最小化 $p_\theta(x_0)$ 的信息熵的最大上界，从而最小化信息熵。下面过程很复杂知道即可，进一步推导VLB，得到组合的KL散度和熵。我们还可以将结果拆开写成右边这种格式
+这里，我们最小化左边的 $\small\mathcal{L}_{VLB}$ ，即可最小化 $p_\theta(x_0)$ 的信息熵的最大上界，从而最小化信息熵。下面过程很复杂知道即可，进一步推导VLB，得到组合的KL散度和熵。我们还可以将结果拆开写成右边这种格式
 $$
 \begin{aligned}
 \mathcal{L}_\text{VLB} 
@@ -161,8 +161,8 @@ q(x_{t-1}|x_t, x_0)=N(x_{t};\tilde{\mu}(x_t,x_0),\Sigma_t)&= N(\frac{1}{\sqrt{\a
 p_\theta(x_{t-1}|x_{t})=N(x_{t-1};\mu_\theta(x_t,t),\Sigma_t)&=N(\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} z_\theta(x_t,t)),\Sigma)
 \end{align}
 $$
-其中  $\Sigma_t= \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \cdot \beta_t$，因为不包含目标x与噪声z，这里不展开说。根据多元高斯分布求KL散度的公式如下：
-$$、
+其中  $\Sigma_t= \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \cdot \beta_t$ ，因为不包含目标x与噪声z，这里不展开说。根据多元高斯分布求KL散度的公式如下：
+$$
 \begin{align} 
 L_{t-1}&=\mathbb{E}_{x_0,z_t}\left[\frac{1}{2||\Sigma(x_t,t)||_2^2}||\tilde{\mu}_t(x_t,x_0)-\mu_\theta(x_t,t)||^2\right] \\
 &=\mathbb{E}_{x_0,z_t}\left[\frac{1}{2||\Sigma(x_t,t)||_2^2}||\frac{1}{\sqrt{a_t}}(x_t-\frac{\beta_t}{\sqrt{1-\bar{a}_t}}z_t)-\frac{1}{\sqrt{a_t}}(x_t-\frac{\beta_t}{\sqrt{1-\bar{a}_t}}z_\theta(x_t,t))||^2\right] \\ 
@@ -170,7 +170,7 @@ L_{t-1}&=\mathbb{E}_{x_0,z_t}\left[\frac{1}{2||\Sigma(x_t,t)||_2^2}||\tilde{\mu}
 &=\mathbb{E}_{x_0,z_t}\left[\frac{\beta_t^2}{2\alpha_t(1-\bar{\alpha}_t)||\Sigma(x_t,t)||_2^2}||z_t-z_\theta(\sqrt{\bar{\alpha}_t}x_0+\sqrt{1-\bar{\alpha}_t}z_t,t)||^2\right]
 \end{align}
 $$
-此时我们发现只要通过拉进 $z_t$ 与$z_\theta(x_t,t)$ 的距离的方式就可以训练参数 $\theta$。所以，我们利用噪声间MSE Loss 即可完成优化损失函数的设计：
+此时我们发现只要通过拉进 $z_t$ 与 $z_\theta(x_t,t)$ 的距离的方式就可以训练参数 $\theta$。所以，我们利用噪声间MSE Loss 即可完成优化损失函数的设计：
 $$ \mathcal{Loss} =  ||z_t-z_\theta(\sqrt{\bar{\alpha}_t}x_0+\sqrt{1-\bar{\alpha}_t}z_t,t)||^2 
 $$
 
@@ -186,13 +186,15 @@ $$
 
 ### 3.2 推理过程
 ![](images/ddpm采样.png)
-上图为原论文的推理采样过程伪代码。因为此时已经训练出来了 $\epsilon_θ$（这里是UNet网络），所以在下面的推理过程中 $ϵ_θ(x_t,t)$是已知的。假设我用推理的过程中扩散T步，那么从T步开始逆向回推，每一步有如下操作：
+上图为原论文的推理采样过程伪代码。因为此时已经训练出来了 $\epsilon_θ$ （这里是UNet网络），所以在下面的推理过程中 $ϵ_θ(x_t,t)$ 是已知的。假设我用推理的过程中扩散T步，那么从T步开始逆向回推，每一步有如下操作：
 
-1. 如果 $t = 1$，噪声$z = 0$。因为在算 $\sigma_t$ 时需要 $\alpha_0$ ，但我们没有，所以在这里直接让$z = 0$ 不计算即可。如果 $t > 1$ 时，即可取随机噪声 $z\in\mathcal{N}(0, \mathbf{I})$ 。
-2. 因为前面我们已经得出 $q({x}_{t-1} \vert {x}_t) = N(\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} z_\theta(x_t,t)),\frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \cdot \beta_t)$ ， 所以可得如下推理$$
+1. 如果 $t = 1$ ，噪声 $z = 0$ 。因为在算 $\sigma_t$ 时需要 $\alpha_0$ ，但我们没有，所以在这里直接 $z = 0$ 不计算即可。如果 $t > 1$ 时，即可取随机噪声 $z\in\mathcal{N}(0, \mathbf{I})$ 。
+2. 因为前面我们已经得出 $q({x}_{t-1} \vert {x}_t) = N(\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} z_\theta(x_t,t)),\frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \cdot \beta_t)$ ， 所以可得如下推理
+$$
 \begin{align}
 & \frac{x_{t-1} - \mu}{\sigma} \sim N(0,I)=z \\
 & x_{t-1} = \mu + \sigma z \\
 & x_{t-1} =\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} z_\theta(x_t,t)) + \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \cdot \beta_t z
 \end{align}
-$$最后一步公式对应的就是 $x_{t-1} =\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{1- \alpha_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon_\theta(x_t,t)) + \sigma_t z$
+$$
+3. 最后一步公式对应的就是 $x_{t-1} =\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{1- \alpha_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon_\theta(x_t,t)) + \sigma_t z$
