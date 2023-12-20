@@ -1,8 +1,9 @@
+Generative Modeling by Estimating Gradients of the Data Distribution
+论文：https://arxiv.org/abs/1907.05600
+代码：
 ## 0. 预备知识点
 ### 0.1 分数生成模型
 在DDPM 诞生之前还有一种生成范式：基于数据分布相关的梯度的**分数生成模型（Score-based Generative Model）**。其主要目标是估计与数据分布相关的梯度，即“stein分数” $\nabla _{\mathbf{x}}\log p(\mathbf{x})$ 。并使用朗之万动力学（Langevin dynamics）的方法从估计的数据分布中进行采样来生成新的样本。
-这里的
-
 传统生成模型的目标就是要得到数据的分布。例如一个数据集${x_1, x_2, ..., x_N}$ 的数据的概率密度分布（注意，这里是概率密度分布，PDF）为p(x)，我们会按照正态分布的格式记为：
 $$
 p_{\theta}(\mathbf{x}) = \frac{e^{-f_{\theta}(\mathbf{x})}}{C_{\theta}},f_{\theta}(\mathbf{x})\in \mathbb{R}\\
@@ -17,7 +18,7 @@ $$
 数据往往是多维的。由分数的定义以及从数学的角度出发来看，它应当是一个“矢(向)量场”(vector field) 。向量的方向就是：对于输入数据(样本)来说，其对数概率密度增长最快的方向。（下图仅仅是示意，不代表真实场景）如果在采样过程中沿着分数的方向走，就能够走到数据分布的高概率密度区域（即为中心，方向近乎垂直区），最终生成的样本就会符合原数据分布。
 
 ![](images/分数.gif)
-如果回到DDPM，分数与噪声有很大的关系
+
 ### 0.3  郎之万动力学采样方法
 
 朗之万动力学（Langevin dynamics）原是描述物理学中布朗运动（悬浮在液体或气体中的微小颗粒所做的无规则运动）的微分方程，借鉴到这里作为一种生成样本的方法。
@@ -34,7 +35,7 @@ $$
 
 
 ## 1. 分数生成模型具体实现
-
+### 1.1 
 现在我们想要训练一个网络来估计出真实的分布。 $s_\theta(\mathbf{x})$ 就是网络估计的分数，同理 $\theta$ 还是代表网络参数。我们可以最小化真实的score function，用这种形似来优化即可。
 $$\mathcal{L} = \mathbb{E}_{p(\mathbf{x})}[||\nabla _{\mathbf{x}}\log p(\mathbf{x}) - \mathbf{s} _{\theta}(\mathbf{x})||^{2}]$$
 但是这样的一个loss我们是算不出来的，因为我们并不知道真实的$p(\mathbf{x})$是什么。我们把上面loss的期望写开，二次项打开，可以得到

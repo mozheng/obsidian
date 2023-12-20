@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/随机微分方程SDE.md",
+                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/随机微分方程SDE.md",
+                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/随机微分方程SDE.md",
+                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/随机微分方程SDE.md"
+                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md"
               }
             }
           }
@@ -148,11 +148,15 @@
   },
   "active": "6259e6ade9a90c66",
   "lastOpenFiles": [
-    "多模态/基础算法模型/扩散模型/StableDiffusion模型.md",
-    "多模态/基础算法模型/扩散模型/随机微分方程SDE.md",
+    "多模态/基础算法模型/扩散模型/分数生成模型 Score-based Generative Model.md",
+    "多模态/基础算法模型/扩散模型/4. 再谈随机微分方程SDE.md",
+    "多模态/基础算法模型/扩散模型/3. 降噪扩散模型 Denoising Diffusion Probabilistic Models.md",
+    "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
+    "多模态/基础算法模型/扩散模型/1. 扩散生成模型的总理论.md",
+    "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
+    "多模态/基础算法模型/扩散模型/4. 第一次反思扩散模型.md",
     "多模态/images/分数在高低区域的作用.png",
     "多模态/images/分数在高低区域.png",
-    "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
     "images/分数.png.md",
     "images",
     "多模态/论文阅读/视频生成/VideoCrafter1.md",
@@ -162,7 +166,6 @@
     "Pasted image 20231114150931.png",
     "多模态/images/分数.gif",
     "多模态/images/ac17b9eb-ec31-4bff-bbcf-cff959d525f5-20230131152439349.gif",
-    "多模态/基础算法模型/扩散模型/StableDiffusionXL模型.md",
     "多模态/基础算法模型/训练扩散实验.md",
     "多模态/基础算法模型/训练方法",
     "多模态/基础算法模型/未命名文件夹",
