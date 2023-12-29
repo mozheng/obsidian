@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
+                "file": "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "a8d0075c9a1f3656",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 273.5
   },
   "right": {
     "id": "fa4934f3f29184e1",
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
+                "file": "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
+                "file": "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md"
+                "file": "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md"
               }
             }
           }
@@ -146,19 +155,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6259e6ade9a90c66",
+  "active": "a8d0075c9a1f3656",
   "lastOpenFiles": [
-    "多模态/基础算法模型/扩散模型/分数生成模型 Score-based Generative Model.md",
-    "多模态/基础算法模型/扩散模型/4. 再谈随机微分方程SDE.md",
     "多模态/基础算法模型/扩散模型/3. 降噪扩散模型 Denoising Diffusion Probabilistic Models.md",
-    "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
-    "多模态/基础算法模型/扩散模型/1. 扩散生成模型的总理论.md",
     "多模态/基础算法模型/扩散模型/DDPM降噪扩散模型.md",
+    "多模态/基础算法模型/扩散模型/分数生成模型 Score-based Generative Model.md",
+    "多模态/基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
+    "images/似然模型举例.png.md",
+    "images",
+    "多模态/images/隐式生成模型举例.png",
+    "多模态/images/似然模型举例.png",
+    "多模态/基础算法模型/扩散模型/4. 再谈随机微分方程SDE.md",
+    "多模态/基础算法模型/扩散模型/1. 扩散生成模型的总理论.md",
     "多模态/基础算法模型/扩散模型/4. 第一次反思扩散模型.md",
     "多模态/images/分数在高低区域的作用.png",
     "多模态/images/分数在高低区域.png",
     "images/分数.png.md",
-    "images",
     "多模态/论文阅读/视频生成/VideoCrafter1.md",
     "多模态/论文阅读/视频生成",
     "多模态/基础算法模型/训练方法/ROLA训练方法.md",
