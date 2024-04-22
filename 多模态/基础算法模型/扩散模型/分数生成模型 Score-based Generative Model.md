@@ -56,7 +56,7 @@ $$
 =& 2 \sum\limits_{i=1}^{N} - \int( \frac{\partial (p(\mathbf{x})\mathbf{s}_{\theta_i}(\mathbf{x}))}{\partial \mathbf{x}_{i}} d \mathbf{x} + \int p(\mathbf{x}) \frac{\partial \mathbf{s}_{\theta_i}(\mathbf{x})}{\partial \mathbf{x}_{i}}) d \mathbf{x}
 \end{align*}
 $$
-上面的最后一步是分段求积分公式，因为$P(x)$取极限时都是0，这是PDF的特性。可得下面左边那部分为0。
+上面的最后一步是分段求积分公式，因为 $P(x)$ 取极限时都是0，这是PDF的特性。可得下面左边那部分为0。
 $$
 \begin{align*}
 =& 2 - (p(\mathbf{x})\mathbf{s}_{\theta_i}(\mathbf{x})\bigg\rvert^{\infty}_{-\infty}) + \sum\limits_{i=1}^{N}\int p(\mathbf{x}) \frac{\partial \mathbf{s}_{\theta i}(\mathbf{x})}{\partial \mathbf{x}_{i}} d \mathbf{x}\\ 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7c197e84831421b4",
+        "id": "219b8bd51a6aa2e4",
         "type": "tabs",
         "children": [
           {
-            "id": "301914b422b4c8ec",
+            "id": "967e6698dbc99abd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础算法模型/扩散模型/DSM分数扩散模型.md",
+                "file": "基础算法模型/扩散模型/1.  扩散生成模型的总理论.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#DDPM",
+                "query": "tag:#分数模型，记为",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "773c908a6a0a9bc4",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "基础算法模型/扩散模型/DSM分数扩散模型.md",
+                "file": "基础算法模型/扩散模型/1.  扩散生成模型的总理论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "基础算法模型/扩散模型/DSM分数扩散模型.md",
+                "file": "基础算法模型/扩散模型/1.  扩散生成模型的总理论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +116,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "基础算法模型/扩散模型/DSM分数扩散模型.md"
+                "file": "基础算法模型/扩散模型/1.  扩散生成模型的总理论.md"
               }
             }
           },
@@ -143,7 +144,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -152,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,34 +170,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "301914b422b4c8ec",
+  "active": "967e6698dbc99abd",
   "lastOpenFiles": [
+    "论文阅读/视频生成/VideoCrafter1.md",
+    "论文阅读/虚拟换衣/DCI-VTON.md",
+    "论文阅读/虚拟换衣/HR-VITON.md",
+    "基础算法模型/扩散模型/1.  扩散生成模型的总理论.md",
+    "images/1.2.4-2.png",
+    "基础算法模型/扩散模型/2. 分数生成模型 Score-based Generative Model.md",
+    "images/1.2.4-1.png",
     "基础算法模型/扩散模型/DDPM降噪扩散模型.md",
-    "基础算法模型/扩散模型/DSM分数扩散模型.md",
-    "Excalidraw/Drawing 2023-10-06 12.20.59.excalidraw.md",
+    "images/1.2.3-1.png",
+    "images/1.1.png",
+    "基础算法模型/扩散模型/分数生成模型 Score-based Generative Model.md",
+    "基础算法模型/扩散模型/3. 降噪扩散模型 Denoising Diffusion Probabilistic Models.md",
+    "基础算法模型/扩散模型/4. 再谈随机微分方程SDE.md",
+    "Excalidraw/Drawing 2024-04-09 16.08.19.excalidraw.md",
     "Excalidraw",
-    "images/ddpm采样.png",
-    "images/ddpm训练.png",
-    "images/ddpm图示.png",
-    "images",
-    "基础算法模型/扩散模型",
+    "images/第18页-7.PNG",
+    "images/第18页-6.PNG",
+    "images/第11页-5.PNG",
+    "images/第4页-1.PNG",
+    "论文阅读/视频生成",
+    "论文阅读/虚拟换衣",
+    "论文阅读",
+    "基础算法模型/训练方法/ROLA训练方法.md",
+    "基础算法模型/训练方法",
+    "images/分数在高低区域的作用.png",
+    "images/分数.gif",
+    "基础算法模型/Stable Diffusion XL.md",
+    "基础算法模型/扩散模型/DSM分数扩散模型.md",
+    "2023-10-19.md",
+    "未命名 2.canvas",
+    "未命名 1.canvas",
+    "未命名.canvas",
     "具体场景算法/虚拟换衣/DCI-VTON.md",
     "具体场景算法/虚拟换衣/HR-VITON.md",
     "具体场景算法/可控文生图/T2I-Adapter.md",
+    "Excalidraw/Drawing 2023-10-06 12.20.59.excalidraw.md",
+    "images",
+    "基础算法模型/扩散模型",
     "基础控件/FlashAttention.md",
     "具体场景算法/可控文生图",
     "具体场景算法/虚拟换衣",
     "具体场景算法",
     "基础控件/Muti-Query Attention.md",
-    "基础控件/images/Pasted image 20230821153108.png",
-    "基础控件/images/Pasted image 20230821144328.png",
     "template/未命名.md",
-    "基础控件/images",
-    "template",
     "Excalidraw/Drawing 2023-08-21 13.40.21.excalidraw.md",
-    "未命名.canvas",
-    "2023-08-21.md",
-    "基础算法模型",
-    "TTS"
+    "2023-08-21.md"
   ]
 }
