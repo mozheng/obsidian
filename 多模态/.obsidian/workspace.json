@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "4e5ab595886989c8",
+        "id": "eec7adfc06d05667",
         "type": "tabs",
         "children": [
           {
-            "id": "3c3a7e419e8b8398",
+            "id": "7d8f24d490f8d213",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 292.5,
+    "collapsed": true
   },
   "right": {
     "id": "773c908a6a0a9bc4",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md"
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md"
               }
             }
           },
@@ -163,8 +170,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4277f4d4862bda17",
+  "active": "7d8f24d490f8d213",
   "lastOpenFiles": [
+    "基础控件/FlashAttention.md",
+    "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
+    "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
+    "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md",
     "扩散模型/第二章 扩散模型通用工具/Stable Diffusion.md",
     "扩散模型/第二章 扩散模型通用工具/SD Lora.md",
     "扩散模型/第二章 扩散模型通用工具/DiT.md",
@@ -173,14 +184,11 @@
     "扩散模型/第三章 扩散模型各行业应用/人脸生成.md",
     "扩散模型/第一章 扩散模型/译文1. 理解扩散模型：统一观点.md",
     "扩散模型/第一章 扩散模型/DDPM降噪扩散模型.md",
-    "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
-    "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
     "扩散模型/第二章 扩散模型通用工具",
     "扩散模型/第三章 扩散模型各行业应用",
     "扩散模型/第一章 扩散模型",
     "扩散模型",
     "基础算法模型/第一章 扩散模型/1.  扩散模型总论.md",
-    "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md",
     "images/2.2.2.jpg",
     "images/分数.gif",
     "images/洞穴寓言.jpeg",
@@ -205,7 +213,6 @@
     "基础算法模型/第一章 扩散模型/译文1. 理解扩散模型：统一观点.md",
     "基础算法模型/扩散模型/3. 降噪扩散模型 Denoising Diffusion Probabilistic Models.md",
     "Excalidraw/Drawing 2024-04-09 16.08.19.excalidraw.md",
-    "images/VAE.md",
     "Excalidraw",
     "论文阅读/视频生成",
     "论文阅读/虚拟换衣",
