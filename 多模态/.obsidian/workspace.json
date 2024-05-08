@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型公式应用.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型公式应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型公式应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md"
+                "file": "扩散模型/第一章 扩散模型/2.  扩散模型公式应用.md"
               }
             }
           },
@@ -170,10 +170,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7d8f24d490f8d213",
+  "active": "4277f4d4862bda17",
   "lastOpenFiles": [
     "基础控件/FlashAttention.md",
-    "扩散模型/第一章 扩散模型/2.  扩散模型概论案例.md",
+    "扩散模型/第一章 扩散模型/2.  扩散模型公式应用.md",
     "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
     "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md",
     "扩散模型/第二章 扩散模型通用工具/Stable Diffusion.md",
