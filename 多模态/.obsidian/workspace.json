@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1067258a65df2e22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "410901257f123294",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md"
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md"
               }
             }
           },
@@ -185,7 +172,7 @@
   "active": "410901257f123294",
   "lastOpenFiles": [
     "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
-    "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
+    "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
     "images/2.1.1.jpg",
     "扩散模型/第一章 扩散模型/2.  分数生成模型初探.md",
     "images/2.2.2.jpg",
