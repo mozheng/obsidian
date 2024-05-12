@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eec7adfc06d05667",
+        "id": "f53f53a388e10efa",
         "type": "tabs",
         "children": [
           {
-            "id": "7d8f24d490f8d213",
+            "id": "1067258a65df2e22",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "410901257f123294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5,
-    "collapsed": true
+    "width": 292.5
   },
   "right": {
     "id": "773c908a6a0a9bc4",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md"
+                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md"
               }
             }
           },
@@ -170,10 +182,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7d8f24d490f8d213",
+  "active": "410901257f123294",
   "lastOpenFiles": [
-    "扩散模型/第一章 扩散模型/2.  分数生成模型初探.md",
     "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
+    "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码大整理.md",
+    "images/2.1.1.jpg",
+    "扩散模型/第一章 扩散模型/2.  分数生成模型初探.md",
+    "images/2.2.2.jpg",
     "基础控件/FlashAttention.md",
     "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md",
     "扩散模型/第二章 扩散模型通用工具/Stable Diffusion.md",
@@ -183,13 +198,11 @@
     "扩散模型/第三章 扩散模型各行业应用/虚拟换装.md",
     "扩散模型/第三章 扩散模型各行业应用/人脸生成.md",
     "扩散模型/第一章 扩散模型/译文1. 理解扩散模型：统一观点.md",
-    "扩散模型/第一章 扩散模型/DDPM降噪扩散模型.md",
     "扩散模型/第二章 扩散模型通用工具",
     "扩散模型/第三章 扩散模型各行业应用",
     "扩散模型/第一章 扩散模型",
     "扩散模型",
     "基础算法模型/第一章 扩散模型/1.  扩散模型总论.md",
-    "images/2.2.2.jpg",
     "images/分数.gif",
     "images/洞穴寓言.jpeg",
     "images/分数在高低区域的作用.png",
@@ -200,7 +213,6 @@
     "images/VAE网络结构.png",
     "基础算法模型/第一章 扩散模型/2. 【old】分数生成模型 Score-based Generative Model.md",
     "基础算法模型/第一章 扩散模型/DDPM降噪扩散模型.md",
-    "images/2.1.1.jpg",
     "基础算法模型/第三章 扩散模型各行业应用/人脸生成.md",
     "基础算法模型/第三章 扩散模型各行业应用/未命名 1.md",
     "基础算法模型/第二章 扩散模型通用工具/SD Lora.md",
@@ -212,7 +224,6 @@
     "基础算法模型/扩散模型/2.  基于分数的生成模型.md",
     "基础算法模型/第一章 扩散模型/译文1. 理解扩散模型：统一观点.md",
     "基础算法模型/扩散模型/3. 降噪扩散模型 Denoising Diffusion Probabilistic Models.md",
-    "Excalidraw/Drawing 2024-04-09 16.08.19.excalidraw.md",
     "Excalidraw",
     "论文阅读/视频生成",
     "论文阅读/虚拟换衣",
