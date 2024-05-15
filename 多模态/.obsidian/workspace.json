@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f53f53a388e10efa",
+        "id": "10856df0553bf22a",
         "type": "tabs",
         "children": [
           {
-            "id": "410901257f123294",
+            "id": "3168749ff10f3036",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
+                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
+                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
+                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md"
+                "file": "扩散模型/第一章 扩散模型/1.  扩散模型总论.md"
               }
             }
           },
@@ -169,12 +169,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "410901257f123294",
+  "active": "3168749ff10f3036",
   "lastOpenFiles": [
+    "扩散模型/第一章 扩散模型/2.  分数生成模型初探.md",
     "扩散模型/第一章 扩散模型/1.  扩散模型总论.md",
     "扩散模型/第一章 扩散模型/从0开始的扩散模型公式代码详细讲解.md",
     "images/2.1.1.jpg",
-    "扩散模型/第一章 扩散模型/2.  分数生成模型初探.md",
     "images/2.2.2.jpg",
     "基础控件/FlashAttention.md",
     "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md",
