@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "935b2742cdac36a3",
+        "id": "40095d88c54ebdd4",
         "type": "tabs",
         "children": [
           {
-            "id": "82711a4ff2dd486f",
+            "id": "c368f07ca814cecf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "扩散模型/第一单元 扩散模型基础理论/3. 初识扩散模型.md",
+                "file": "扩散模型/第一单元 扩散模型基础理论/8. 基于微分方程的扩散模型.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "8. 基于微分方程的扩散模型"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "扩散模型/第一单元 扩散模型基础理论/3. 初识扩散模型.md",
+                "file": "扩散模型/第一单元 扩散模型基础理论/8. 基于微分方程的扩散模型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "8. 基于微分方程的扩散模型 的反向链接列表"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "扩散模型/第一单元 扩散模型基础理论/3. 初识扩散模型.md",
+                "file": "扩散模型/第一单元 扩散模型基础理论/8. 基于微分方程的扩散模型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "8. 基于微分方程的扩散模型 的出链列表"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "扩散模型/第一单元 扩散模型基础理论/3. 初识扩散模型.md"
-              }
+                "file": "扩散模型/第一单元 扩散模型基础理论/8. 基于微分方程的扩散模型.md"
+              },
+              "icon": "lucide-list",
+              "title": "8. 基于微分方程的扩散模型 的大纲"
             }
           },
           {
@@ -134,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -146,7 +164,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
             }
           }
         ],
@@ -169,21 +189,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "82711a4ff2dd486f",
+  "active": "c368f07ca814cecf",
   "lastOpenFiles": [
-    "扩散模型/第一单元 扩散模型基础理论/4. 从VAE开始.md",
-    "扩散模型/第一单元 扩散模型基础理论/5. 多层VAE构建扩散模型.md",
-    "扩散模型/第一单元 扩散模型基础理论/8. 基于微分优化的扩散模型.md",
+    "扩散模型/第一单元 扩散模型基础理论/7.  基于分数的扩散模型：SMLD.md",
+    "扩散模型/第一单元 扩散模型基础理论/6. 基于噪声的扩散模型：DDPM.md",
+    "扩散模型/第一单元 扩散模型基础理论/4. 基于噪声的扩散模型：从VAE开始.md",
+    "扩散模型/第一单元 扩散模型基础理论/8. 基于微分方程的扩散模型.md",
     "扩散模型/第一单元 扩散模型基础理论/3. 初识扩散模型.md",
-    "扩散模型/第一单元 扩散模型基础理论/7. 基于分数优化的扩散模型.md",
+    "扩散模型/第一单元 扩散模型基础理论/5. 基于噪声的扩散模型：多层VAE构建扩散模型.md",
     "扩散模型/草稿/一、扩散模型总论.md",
-    "扩散模型/第一单元 扩散模型基础理论/6. 基于噪声优化的扩散模型：DDPM.md",
-    "扩散模型/第一单元 扩散模型基础理论/6. VDM三种优化策略的比较.md",
     "扩散模型/草稿/二、分数生成模型初探.md",
+    "扩散模型/images/1.17.png",
+    "扩散模型/第一单元 扩散模型基础理论/2. 生成式计算机视觉GAN.md",
+    "扩散模型/images/1.16.jpg",
+    "扩散模型/images/1.15.png",
+    "扩散模型/第一单元 扩散模型基础理论/6. VDM三种优化策略的比较.md",
     "扩散模型/草稿/从0开始的扩散模型公式代码详细讲解.md",
     "扩散模型/草稿/译文1. 理解扩散模型：统一观点.md",
     "扩散模型/第一单元 扩散模型基础理论/1. 从生成式自然语言模型说起.md",
-    "扩散模型/第一单元 扩散模型基础理论/2. 生成式计算机视觉GAN.md",
     "扩散模型/images/1.13.png",
     "扩散模型/images/1.12.png",
     "扩散模型/草稿",
@@ -196,9 +219,6 @@
     "扩散模型/images/1.8.png",
     "扩散模型/images/1.2.png.sb-c0a28b9d-s8vDG2",
     "扩散模型/images/1.2.png.sb-c0a28b9d-lqYb73",
-    "扩散模型/images/1.7.png",
-    "扩散模型/images/1.1.png",
-    "扩散模型/images/1.6.png",
     "扩散模型/images",
     "基础控件/FlashAttention.md",
     "基础算法模型/第一章 扩散模型/2.  扩散模型概论案例.md",
@@ -216,7 +236,6 @@
     "基础算法模型/第一章 扩散模型/2. 【old】分数生成模型 Score-based Generative Model.md",
     "基础算法模型/第一章 扩散模型/DDPM降噪扩散模型.md",
     "基础算法模型/第三章 扩散模型各行业应用/人脸生成.md",
-    "基础算法模型/第三章 扩散模型各行业应用/未命名 1.md",
     "未命名 2.canvas",
     "未命名 1.canvas",
     "未命名.canvas"
